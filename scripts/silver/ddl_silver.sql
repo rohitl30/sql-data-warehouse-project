@@ -1,12 +1,14 @@
 /*
-===============================================================================
-DDL Script: Create Silver Tables
-===============================================================================
-Script Purpose:
-    This script creates tables in the 'silver' schema, dropping existing tables 
-    if they already exist.
-	  Run this script to re-define the DDL structure of 'bronze' Tables
-===============================================================================
+----------------------------------------------------
+Create Silver Tables
+----------------------------------------------------
+
+Purpose:
+This script creates the tables in the 'silver' schema.
+If the tables already exist, they will be dropped first.
+
+Use this script to recreate the silver table structure.
+----------------------------------------------------
 */
 
 IF OBJECT_ID('silver.crm_cust_info', 'U') IS NOT NULL
